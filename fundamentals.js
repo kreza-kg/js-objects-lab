@@ -29,6 +29,12 @@ console.log('It is a ' + aCar.color.exterior + ' car, ' + aCar.color.interior.te
 
 console.log('First owner : ' + aCar.previous_owners[0] );
 
-console.log(
-  "First owner: " +
-    aCar.previous_owners[0].name + ' - ' + aCar.previous_owners[0].address );
+console.log("First owner: " + aCar.previous_owners[0].name + ' - ' + aCar.previous_owners[0].address );
+i = 0;
+for (let i = 0 ; i < aCar.features.length ; i += 1) {
+  console.log(aCar.features[i]) ;
+} 
+
+for (let i = 0 ; i < aCar.previous_owners.length ; i += 1) {
+  console.log(aCar.previous_owners[i].name) ;
+} 
